@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yuk Bermusik – Kursus Musik untuk Anak & Mahasiswa</title>
+<meta name="description" content="Kursus piano, gitar, vokal, drum, dan biola untuk anak-anak dan mahasiswa. Coba kelas gratis hari ini.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Lewati ke konten</a>
+
+<header class="nav" id="nav">
+  <a class="logo" href="#top">♪ Yuk Bermusik</a>
+  <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false">☰</button>
+  <nav id="menu">
+    <a href="#tentang">Tentang</a>
+    <a href="#program">Program</a>
+    <a href="#paket">Paket</a>
+    <a href="#testimoni">Cerita Murid</a>
+    <a href="#faq">FAQ</a>
+    <a class="btn btn-sm" href="#kontak">Coba Gratis</a>
+  </nav>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="hero-text">
+    <h1>Belajar musik itu seru. Mulai dari satu nada.</h1>
+    <p>Kelas piano, gitar, vokal, drum, dan dengan guru ramah untuk anak usia 5–15 tahun dan mahasiswa yang ingin serius atau sekadar bersenang-senang.</p>
+    <div class="cta">
+      <a class="btn" href="#kontak">Daftar kelas percobaan</a>
+      <a class="btn btn-ghost" href="#paket">Lihat paket</a>
+    </div>
+  </div>
+  <div class="piano-wrap">
+    <p class="hint">Coba tekan tuts di bawah, atau pakai tombol A–K di keyboard.</p>
+    <div class="piano" id="piano" role="group" aria-label="Piano mini"></div>
+    <p class="now" id="now" aria-live="polite">Nada: –</p>
+  </div>
+</section>
+
+<section class="stats">
+  <div><strong data-count="1200">0</strong><span>murid aktif</span></div>
+  <div><strong data-count="25">0</strong><span>guru berpengalaman</span></div>
+  <div><strong data-count="12">0</strong><span>tahun mengajar</span></div>
+  <div><strong data-count="40">0</strong><span>pentas per tahun</span></div>
+</section>
+
+<section class="section" id="tentang">
+  <div class="split">
+    <div>
+      <h2>Tentang Yuk bermusik</h2>
+      <p>Yuk Bermusik berdiri sejak 2014 di Surabaya. Kami percaya setiap anak dan setiap mahasiswa bisa bermain musik, asalkan belajarnya terasa menyenangkan dan dibimbing dengan sabar.</p>
+      <p>Kelas kecil maksimal 6 murid, kurikulum bertahap, dan pentas rutin agar murid berani tampil.</p>
+    </div>
+    <div class="vm">
+      <article class="card c-yellow"><h3>Visi</h3><p>Menjadi sekolah musik yang membuat belajar musik terasa dekat, menyenangkan, dan bermakna bagi semua usia.</p></article>
+      <article class="card c-mint"><h3>Misi</h3>
+        <ul>
+          <li>Mengajar dengan metode bermain dan praktik langsung.</li>
+          <li>Menyediakan guru bersertifikat yang sabar.</li>
+          <li>Memberi ruang tampil lewat konser murid tiap triwulan.</li>
+          <li>Menjaga biaya tetap terjangkau untuk pelajar.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="program">
+  <h2>Pilih alat musikmu</h2>
+  <div class="grid">
+    <article class="card"><span class="ico">🎹</span><h3>Piano</h3><p>Dasar membaca not sampai lagu favorit.</p></article>
+    <article class="card"><span class="ico">🎸</span><h3>Gitar</h3><p>Akustik dan elektrik, dari kunci dasar sampai solo.</p></article>
+    <article class="card"><span class="ico">🎤</span><h3>Vokal</h3><p>Teknik napas, pitch, dan percaya diri di panggung.</p></article>
+    <article class="card"><span class="ico">🥁</span><h3>Drum</h3><p>Ritme, koordinasi, dan bermain dalam band.</p></article>
+    <article class="card"><span class="ico">🎻</span><h3>Biola</h3><p>Posisi, bowing, dan lagu klasik maupun pop.</p></article>
+    <article class="card"><span class="ico">🎧</span><h3>Produksi Musik</h3><p>Rekaman dan membuat lagu sendiri di laptop.</p></article>
+  </div>
+</section>
+
+<section class="section" id="paket">
+  <h2>Paket belajar</h2>
+  <p class="sub">Durasi tiap sesi 45 menit. Semua paket sudah termasuk buku latihan.</p>
+  <div class="tabs" role="tablist">
+    <button class="tab active" role="tab" aria-selected="true" data-target="anak">Paket Studio</button>
+    <button class="tab" role="tab" aria-selected="false" data-target="mhs">Paket Home</button>
+  </div>
+
+  <div class="plans" id="anak" role="tabpanel">
+    <article class="plan"><h3>Mini</h3><p class="price">Rp 400.000<small>/bulan</small></p>
+      <ul><li>4 sesi privat</li><li>1 alat musik</li><li>Laporan perkembangan</li></ul><a class="btn btn-ghost" href="#kontak" data-pick="Anak – Mini">Pilih paket</a></article>
+    <article class="plan best"><span class="badge">Paling dipilih</span><h3>Reguler</h3><p class="price">Rp 750.000<small>/bulan</small></p>
+      <ul><li>8 sesi privat</li><li>1 alat musik</li><li>Ikut konser triwulan</li><li>Laporan perkembangan</li></ul><a class="btn" href="#kontak" data-pick="Anak – Reguler">Pilih paket</a></article>
+    <article class="plan"><h3>Kelompok</h3><p class="price">Rp 550.000<small>/bulan</small></p>
+      <ul><li>8 sesi kelas kecil (maks. 6)</li><li>Belajar bareng teman</li><li>Ikut konser triwulan</li></ul><a class="btn btn-ghost" href="#kontak" data-pick="Anak – Kelompok">Pilih paket</a></article>
+  </div>
+
+  <div class="plans" id="mhs" role="tabpanel" hidden>
+    <article class="plan"><h3>Hemat</h3><p class="price">Rp 450.000<small>/bulan</small></p>
+      <ul><li>4 sesi privat</li><li>Jadwal sore/malam</li><li>Diskon dengan KTM</li></ul><a class="btn btn-ghost" href="#kontak" data-pick="Mahasiswa – Hemat">Pilih paket</a></article>
+    <article class="plan best"><span class="badge">Paling dipilih</span><h3>Intensif</h3><p class="price">Rp 850.000<small>/bulan</small></p>
+      <ul><li>8 sesi privat</li><li>Jadwal fleksibel</li><li>Latihan studio 2 jam</li><li>Diskon dengan KTM</li></ul><a class="btn" href="#kontak" data-pick="Mahasiswa – Intensif">Pilih paket</a></article>
+    <article class="plan"><h3>Band Kampus</h3><p class="price">Rp 1.200.000<small>/bulan</small></p>
+      <ul><li>Sesi pelatih band (4 orang)</li><li>Studio 4 jam</li><li>Bantuan persiapan tampil</li></ul><a class="btn btn-ghost" href="#kontak" data-pick="Mahasiswa – Band Kampus">Pilih paket</a></article>
+  </div>
+</section>
+
+<section class="section alt" id="testimoni">
+  <h2>Cerita murid kami</h2>
+  <div class="grid">
+    <blockquote class="card"><p>Anak saya yang pemalu sekarang berani tampil di konser. Gurunya sabar sekali.</p><cite>Bu Rina, orang tua Kayla (8 th)</cite></blockquote>
+    <blockquote class="card"><p>Jadwal malamnya pas buat anak kuliah. Dalam 3 bulan saya sudah bisa main di acara himpunan.</p><cite>Dimas, mahasiswa Teknik</cite></blockquote>
+    <blockquote class="card"><p>Kelasnya seru, nggak membosankan. Aku suka belajar drum sama Kak Bayu!</p><cite>Raka, 11 th</cite></blockquote>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <h2>Pertanyaan yang sering muncul</h2>
+  <div class="faq">
+    <details><summary>Apakah harus punya alat musik sendiri?</summary><p>Tidak wajib di awal. Kami menyediakan alat untuk latihan di studio, apabila latihan di lakukan di luar studio atau rumah maka siswa harus memiliki alat musik.</p></details>
+    <details><summary>Usia berapa anak boleh mulai?</summary><p>Mulai usia 5 tahun untuk piano dan vokal. Gitar, drum, dan biola biasanya mulai 7 tahun. Dan juga tergantung pada orang tua jika anaknya ingin belajar alat musik di usia berapa.</p></details>
+    <details><summary>Bagaimana kalau berhalangan hadir?</summary><p>Orang tua atau siswa wajib menghubungi guru atau admin.</p></details>
+    <details><summary>Apa isi kelas percobaan?</summary><p>Satu sesi gratis 30 menit bersama guru untuk mengenal alat musik dan menentukan level.</p></details>
+  </div>
+</section>
+
+<section class="section contact" id="kontak">
+  <div class="split">
+    <div>
+      <h2>Pendaftaran</h2>
+      <p>Isi formulir, kami hubungi lewat WhatsApp untuk menentukan jadwal.</p>
+      <ul class="info">
+        <li>📍 Jl. Contoh Raya No. 12, Surabaya</li>
+        <li>📞 0812-3456-7890</li>
+        <li>✉️ halo@nadaceria.id</li>
+        <li>🕘 Senin–Sabtu, 09.00–20.00 WIB</li>
+      </ul>
+    </div>
+    <form id="form" novalidate>
+      <label>Nama<input name="nama" required autocomplete="name"><span class="err"></span></label>
+      <label>Nomor WhatsApp<input name="wa" type="tel" required placeholder="08xxxxxxxxxx"><span class="err"></span></label>
+      <label>Kategori
+        <select name="paket" id="paket-select">
+          <option>Anak – Mini</option><option>Anak – Reguler</option><option>Anak – Kelompok</option>
+          <option>Mahasiswa – Hemat</option><option>Mahasiswa – Intensif</option><option>Mahasiswa – Band Kampus</option>
+        </select>
+      </label>
+      <label>Alat musik
+        <select name="alat"><option>Piano</option><option>Gitar</option><option>Vokal</option><option>Drum</option><option>Biola</option><option>Produksi Musik</option></select>
+      </label>
+      <button class="btn" type="submit">Kirim lewat WhatsApp</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Yuk Bermusik. Semua hak dilindungi.</p>
+  <a href="#top">Kembali ke atas</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
