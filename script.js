@@ -91,7 +91,6 @@
     a.addEventListener('click', () => { select.value = a.dataset.pick; }));
 
   // ---------- Form -> WhatsApp ----------
-  const WA_NUMBER = '6285198330522'; // ganti dengan nomor WhatsApp perusahaan
   const form = document.getElementById('form');
   form.addEventListener('submit', e => {
     e.preventDefault();
@@ -106,7 +105,7 @@
     show(wa, /^(\+62|62|0)8\d{7,12}$/.test(wa.value.replace(/[\s-]/g, '')) ? '' : 'Isi nomor WhatsApp yang valid, contoh 08123456789.');
     if (!ok) return;
     const text = `Halo Yuk Bermusik, saya ${nama.value.trim()} ingin menjadi siswa Yuk Bermusik.\nPaket: ${form.paket.value}\nAlat musik: ${form.alat.value}\nNo. WA: ${wa.value}`;
-    window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+    window.open(`https://wa.me/${form.admin.value}?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
   });
 
   document.getElementById('year').textContent = new Date().getFullYear();
