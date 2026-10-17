@@ -1,12 +1,13 @@
-* {
-}:root{
+:root{
   --ink:#1d1a4a; --muted:#585580; --bg:#fffdf8; --alt:#f1efff;
   --sun:#ffc93c; --coral:#ff6b6b; --mint:#37d6a0; --sky:#4da3ff; --violet:#6c4cf1;
   --r:20px; --shadow:0 6px 0 rgba(29,26,74,.12);
 }
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
-body{font-family:'Nunito',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;font-size:1.05rem}
+/* Logo watermark di belakang seluruh website */
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:url('logo.png') center/min(100vw,980px) no-repeat;opacity:.3;mix-blend-mode:multiply}
+body{position:relative;font-family:'Nunito',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;font-size:1.05rem}
 h1,h2,h3,.logo,.price{font-family:'Fredoka',sans-serif;line-height:1.15}
 h1{font-size:clamp(2.4rem,6vw,4rem);font-weight:700}
 h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:1rem}
@@ -15,9 +16,11 @@ a{color:inherit}
 :focus-visible{outline:3px solid var(--violet);outline-offset:3px}
 .skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;padding:8px;z-index:99}
 
-.nav{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:.8rem 5%;background:rgba(255,253,248,.92);backdrop-filter:blur(8px);transition:box-shadow .2s}
+.nav{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:.8rem 5%;background:rgba(255,253,248,.7);backdrop-filter:blur(8px);transition:box-shadow .2s}
 .nav.scrolled{box-shadow:0 2px 12px rgba(0,0,0,.08)}
-.logo{font-size:1.5rem;font-weight:700;text-decoration:none;color:var(--violet)}
+.logo{font-size:1.5rem;font-weight:700;text-decoration:none;white-space:nowrap}
+.logo span{-webkit-text-stroke:.6px rgba(29,26,74,.35);paint-order:stroke fill}
+.l-yuk{color:#ffc93c}.l-ber{color:#e8412f}.l-musik{color:#4da3ff}
 nav{display:flex;gap:1.4rem;align-items:center}
 nav a{text-decoration:none;font-weight:600}
 nav a:hover{color:var(--violet)}
@@ -29,7 +32,7 @@ nav a:hover{color:var(--violet)}
 .btn-ghost:hover{box-shadow:0 2px 0 var(--violet)}
 nav .btn,.btn-sm{padding:.45rem 1.1rem;font-size:.95rem;color:#fff}
 
-.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:center;padding:4rem 5% 3rem;background:radial-gradient(circle at 90% 10%,#ffe7a3 0,transparent 35%),radial-gradient(circle at 0 100%,#d9ccff 0,transparent 40%)}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:center;padding:4rem 5% 3rem;background:radial-gradient(circle at 90% 10%,rgba(255,231,163,.5) 0,transparent 35%),radial-gradient(circle at 0 100%,rgba(217,204,255,.5) 0,transparent 40%)}
 .hero p{margin:1.2rem 0 1.8rem;color:var(--muted)}
 .cta{display:flex;gap:1rem;flex-wrap:wrap}
 
@@ -48,7 +51,7 @@ nav .btn,.btn-sm{padding:.45rem 1.1rem;font-size:.95rem;color:#fff}
 .stats span{font-size:.95rem}
 
 .section{padding:5rem 5%}
-.section.alt{background:var(--alt)}
+.section.alt{background:rgba(241,239,255,.35)}
 .sub{color:var(--muted);margin-bottom:1.5rem}
 .split{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
 .split p+p{margin-top:1rem}
@@ -81,7 +84,7 @@ details{background:#fff;border:2px solid var(--ink);border-radius:14px;padding:1
 summary{cursor:pointer;font:600 1.1rem 'Fredoka'}
 details[open] summary{color:var(--violet);margin-bottom:.5rem}
 
-.contact{background:var(--alt)}
+.contact{background:rgba(241,239,255,.35)}
 .info{list-style:none;padding:0;margin-top:1.5rem;display:grid;gap:.6rem}
 form{background:#fff;border:2px solid var(--ink);border-radius:var(--r);padding:1.8rem;display:grid;gap:1rem;box-shadow:var(--shadow)}
 label{display:grid;gap:.3rem;font-weight:700}
@@ -90,7 +93,7 @@ input:focus,select:focus{border-color:var(--violet);outline:0}
 input.invalid{border-color:var(--coral)}
 .err{color:#c0392b;font-size:.85rem;font-weight:600;min-height:1em}
 
-footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;padding:2rem 5%;background:var(--ink);color:#cfc9ff}
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;padding:2rem 5%;background:rgba(29,26,74,.9);color:#cfc9ff}
 
 @media(max-width:860px){
   .hero,.split{grid-template-columns:1fr}
