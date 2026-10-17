@@ -3,10 +3,10 @@
 
   // ---------- Piano mini (Web Audio) ----------
   const notes = [
-    { n: 'Do', f: 261.63, k: 'a' }, { n: 'Re', f: 293.66, k: 's' },
-    { n: 'Mi', f: 329.63, k: 'd' }, { n: 'Fa', f: 349.23, k: 'f' },
-    { n: 'Sol', f: 392.0, k: 'g' }, { n: 'La', f: 440.0, k: 'h' },
-    { n: 'Si', f: 493.88, k: 'j' }, { n: 'Do', f: 523.25, k: 'k' }
+    { n: 'Do', f: 261.63, k: '1' }, { n: 'Re', f: 293.66, k: '2' },
+    { n: 'Mi', f: 329.63, k: '3' }, { n: 'Fa', f: 349.23, k: '4' },
+    { n: 'Sol', f: 392.0, k: '5' }, { n: 'La', f: 440.0, k: '6' },
+    { n: 'Si', f: 493.88, k: '7' }, { n: 'Do', f: 523.25, k: '8' }
   ];
   const piano = document.getElementById('piano');
   const now = document.getElementById('now');
@@ -91,7 +91,7 @@
     a.addEventListener('click', () => { select.value = a.dataset.pick; }));
 
   // ---------- Form -> WhatsApp ----------
-  const WA_NUMBER = '6281234567890'; // ganti dengan nomor WhatsApp perusahaan
+  const WA_NUMBER = '6285198330522'; // ganti dengan nomor WhatsApp perusahaan
   const form = document.getElementById('form');
   form.addEventListener('submit', e => {
     e.preventDefault();
@@ -105,7 +105,7 @@
     show(nama, nama.value.trim().length < 2 ? 'Isi nama dengan benar.' : '');
     show(wa, /^(\+62|62|0)8\d{7,12}$/.test(wa.value.replace(/[\s-]/g, '')) ? '' : 'Isi nomor WhatsApp yang valid, contoh 08123456789.');
     if (!ok) return;
-    const text = `Halo Nada Ceria, saya ${nama.value.trim()} ingin coba kelas gratis.\nPaket: ${form.paket.value}\nAlat musik: ${form.alat.value}\nNo. WA: ${wa.value}`;
+    const text = `Halo Yuk Bermusik, saya ${nama.value.trim()} ingin menjadi siswa Yuk Bermusik.\nPaket: ${form.paket.value}\nAlat musik: ${form.alat.value}\nNo. WA: ${wa.value}`;
     window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
   });
 
